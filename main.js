@@ -80,8 +80,6 @@ function createGUI(){
 
   move.onmousedown = () => {
 
-    console.log("start");
-
     if(theimage == null) return;
 
     let previousPos = [mouseX, mouseY];
@@ -121,8 +119,6 @@ function createGUI(){
   }
 
   scale.onmousedown = () => {
-
-    console.log("start");
 
     if(theimage == null) return;
 
@@ -164,8 +160,6 @@ function createGUI(){
 
   bright.onmousedown = () => {
 
-    console.log("start");
-
     if(theimage == null) return;
 
     let previousPos = [mouseX, mouseY];
@@ -203,8 +197,6 @@ function createGUI(){
       brightness *= scaleFactor;
       if(brightness < 0.05) brightness = 0.05;
 
-      console.log(brightness);
-
       doDrawing()
 
     }, 100);
@@ -212,8 +204,6 @@ function createGUI(){
   }
 
   pixelCount.onmousedown = () => {
-
-    console.log("start");
 
     if(theimage == null) return;
 
@@ -267,8 +257,6 @@ function createGUI(){
 function doDrawing(){
 
   if(theimage == null) return;
-
-  console.log("YUSSS");
 
   drawImage(pixelX, pixelY, pixelWidth, pixelHeight, theimage, brightness,powerFactor,pixels);
   drawDrawing();
@@ -361,8 +349,6 @@ window.addEventListener("drop",function(e){
   e = e || event;
   e.preventDefault();
 
-  console.log("yes", e);
-
   for(var i = 0; i < e.dataTransfer.items.length; i++){
 
     let item = e.dataTransfer.items[i];
@@ -370,8 +356,6 @@ window.addEventListener("drop",function(e){
       var blob = item.getAsFile();
       var reader = new FileReader();
       reader.onload = function (event) {
-
-        console.log("here");
 
         theimage = new Image();
         theimage.src = event.target.result;
@@ -420,15 +404,12 @@ window.addEventListener("paste", function(e){
         var blob = item.getAsFile();
         var reader = new FileReader();
         reader.onload = function(event){
-          //console.log(event.target.result)
 
           theimage = new Image();
           theimage.src = event.target.result;
           theimage.crossOrigin = "Anonymous";
           theimage.style.position = "absolute";
           theimage.style.width = "400px";
-
-          console.log("yes", theimage);
 
           theimage.onload = () => {
 
@@ -447,8 +428,6 @@ window.addEventListener("paste", function(e){
 
             pixelWidth = 100;
             pixelHeight = Math.floor(theimage.height * pixelWidth / theimage.width);
-
-            console.log("yus", pixelWidth, pixelHeight)
 
             doDrawing()
 
@@ -490,23 +469,17 @@ window.addEventListener("keyup",function(e){
 
     let char = String.fromCharCode(e.keyCode);
 
-    console.log("yes", char, e.keyCode);
-
     if(char == "S"){
 
       let currWidth = parseInt(theimage.style.width.replace("px",""));
       currWidth += 30;
       theimage.style.width = currWidth+"px";
-      console.log(currWidth, theimage.style.width);
-
     }
     if(char == "W"){
 
       let currWidth = parseInt(theimage.style.width.replace("px",""));
       currWidth -= 30;
       theimage.style.width = currWidth+"px";
-      console.log(currWidth, theimage.style.width);
-
     }
 
     e.preventDefault();
