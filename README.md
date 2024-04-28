@@ -16,9 +16,9 @@ javascript: (() => {fetch("https://raw.githubusercontent.com/WarpRomo/pictochat-
 2. Go to your bookmarks bar at the top, right click, and click on "add page."
 3. Make the name of the bookmark whatever you want
 4. Paste the copied code into the box for the url, and save the bookmark.
-![image](https://github.com/WarpRomo/pictochat-drawing-bot/assets/56988049/81ca81df-4d04-4586-9aed-18cf4b8387ee)
 6. Go to [https://pict.chat](https://pict.chat)
 7. Anytime you want to start using the drawing bot, simply click on the bookmark, and the code will automatically run.
+# ![image](https://github.com/WarpRomo/pictochat-drawing-bot/assets/56988049/81ca81df-4d04-4586-9aed-18cf4b8387ee)
    
 ## Usage
 1. When you want to draw images, either copy and paste an image into the drawing box, or drag and drop an image file.
