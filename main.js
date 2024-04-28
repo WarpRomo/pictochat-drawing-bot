@@ -6,7 +6,7 @@ let pixelWidth = null;
 let pixelHeight = null;
 let powerFactor = 1;
 let brightness = 1;
-let pixels = 4000;
+let pixels = 3000;
 
 createGUI();
 function createGUI(){
@@ -240,6 +240,7 @@ function createGUI(){
 
       pixels += delta[1] * 50;
       pixels = Math.floor(pixels);
+      if(pixels < 100) pixels = 100;
       pixelCount.innerHTML = "Pixels " + pixels;
 
       doDrawing()
