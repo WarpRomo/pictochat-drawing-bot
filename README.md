@@ -18,8 +18,8 @@ javascript: (() => {fetch("https://raw.githubusercontent.com/WarpRomo/pictochat-
 4. Paste the copied code into the box for the url, and save the bookmark.
 6. Go to [https://pict.chat](https://pict.chat)
 7. Anytime you want to start using the drawing bot, simply click on the bookmark, and the code will automatically run.
-# ![image](https://github.com/WarpRomo/pictochat-drawing-bot/assets/56988049/81ca81df-4d04-4586-9aed-18cf4b8387ee)
-   
+# ![image](https://github.com/WarpRomo/pictochat-drawing-bot/assets/56988049/07c98183-21de-4de4-954e-883c810a00f3)
+
 ## Usage
 1. When you want to draw images, either copy and paste an image into the drawing box, or drag and drop an image file.
 2. Use the buttons at the bottom to control the image. For example, to move the image, click and hold on the "move" button, then move your cursor around. Same goes for scale, and gamma (brightness).
