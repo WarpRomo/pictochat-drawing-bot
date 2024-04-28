@@ -4,7 +4,7 @@ https://github.com/WarpRomo/pictochat-drawing-bot/assets/56988049/81f747ed-88e2-
 This lets you draw realistic images within [https://pict.chat](https://pict.chat), see the video for a demonstration.
 # How do I use it?
 ## Method 1:
-1. Copy the code found here: [main.js](https://raw.githubusercontent.com/WarpRomo/pictochat-drawing-bot/main/main.js);
+1. Copy the code found here: [main.js](https://raw.githubusercontent.com/WarpRomo/pictochat-drawing-bot/main/main.js)
 2. Go to [https://pict.chat](https://pict.chat)
 3. Paste the code you copied into Javascript console, and hit enter, and you're done.
 
