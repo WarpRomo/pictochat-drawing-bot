@@ -25,5 +25,5 @@ javascript: (() => {fetch("https://raw.githubusercontent.com/WarpRomo/pictochat-
 2. Use the buttons at the bottom to control the image. For example, to move the image, click and hold on the "move" button, then move your cursor around. Same goes for scale, and gamma (brightness).
 
 ## Warnings
-# Make sure you don't make the "pixels" value too high (keep it under 7000 I'd say), or you will get a "connection closed" error.
-# Also, don't send vulgar images.
+1. Make sure you don't make the "pixels" value too high (keep it under 7000 I'd say), or you will get a "connection closed" error.
+2. Also, don't send vulgar images.
