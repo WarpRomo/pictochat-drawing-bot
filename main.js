@@ -47,11 +47,15 @@ function createGUI(){
 
   }
 
-  parent.style.position = "relative";
+  parent.style.position = "absolute";
   parent.style.display = "flex";
-  parent.style.marginLeft = "auto";
-  parent.style.marginRight = "auto";
-  parent.style.width = buttonWidth * buttons.length + "px";
+  parent.style.left = "50%";
+  parent.style.transform = "translate(-455%, 0)";
+  parent.style.opacity = "0.7";
+  parent.style.zIndex = "100";
+  parent.style.width = buttonWidth + "px";
+  parent.style.flexDirection = "column";
+  parent.style.top = "0px";
 
   powUp.onmousedown = () => {
 
@@ -246,7 +250,7 @@ function createGUI(){
 
 
   let root = document.getElementById("root");
-  root.after(parent);
+  root.before(parent);
 
 
 
