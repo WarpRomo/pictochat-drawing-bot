@@ -23,3 +23,7 @@ javascript: (() => {fetch("https://raw.githubusercontent.com/WarpRomo/pictochat-
 ## Usage
 1. When you want to draw images, either copy and paste an image into the drawing box, or drag and drop an image file.
 2. Use the buttons at the bottom to control the image. For example, to move the image, click and hold on the "move" button, then move your cursor around. Same goes for scale, and gamma (brightness).
+
+## Warnings
+# Make sure you don't make the "pixels" value too high (keep it under 7000 I'd say), or you will get a "connection closed" error.
+# Also, don't send vulgar images.
