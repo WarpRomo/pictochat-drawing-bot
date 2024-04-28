@@ -6,7 +6,7 @@ let pixelWidth = null;
 let pixelHeight = null;
 let powerFactor = 1;
 let brightness = 1;
-let pixels = 5000;
+let pixels = 4000;
 
 createGUI();
 function createGUI(){
